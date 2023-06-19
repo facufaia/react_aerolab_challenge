@@ -12,13 +12,13 @@ function BuyAvailable({ product, setIsVisible }) {
         handleProductCheckout(stateUser, setIsVisible, cost, _id)
       }}
     >
-      <div className='border shadow-lg relative hover:shadow-2xl hover:absolute hover:-top-2'>
+      <div className='shadow-[3px_4px_8px_-2px_rgba(0,0,0,.14)] hover:shadow-[17px_13px_30px_-7px_rgba(0,0,0,0.6)] hover:-translate-y-2 hover:transition-all hover:duration-700 duration-700'>
         <div className='block'>
           <img
             src='./assets/buy-blue.svg'
             className='absolute right-[.5rem] top-[.5rem]'
           />
-          <div className='absolute top-0 h-full w-full bg-[#14caf7c3] group-hover:transition-opacity group-hover:opacity-100 group-hover:duration-500 duration-500 opacity-0'>
+          <div className='absolute top-0 h-full w-full bg-[#14caf7c3] group-hover:transition-opacity group-hover:opacity-100 group-hover:duration-700 duration-700 opacity-0'>
             <img
               src='./assets/buy-white.svg'
               className='absolute right-[.1rem] top-[.4rem] group-hover:absolute'

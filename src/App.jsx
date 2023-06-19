@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      <header className='w-full'>
-        <div className='flex justify-end w-full my-[.89rem] px-[2.1rem] text-lg'>
+      <header className='w-full pt-16'>
+        <div className='flex fixed z-50 bg-white justify-end w-full -mt-16 py-[.89rem] px-[2.1rem] text-lg'>
           <img
             src='./assets/logo.svg'
             className={`h-7 ${!isVisible && 'cursor-pointer'}`}
@@ -38,7 +38,7 @@ function App() {
           </div>
         </div>
         <div className='relative'>
-          <img src='./assets/header.png' className='object-' />
+          <img src='./assets/header.png' className='h-96 w-full object-cover' />
           <span className='absolute bottom-[3.2rem] left-[6.5rem] text-white text-5xl font-bold'>
             Electronics
           </span>

@@ -4,7 +4,7 @@ import useHistory from '../Hooks/useHistory'
 import userContext from '../context/UserContext'
 import { useState, useContext } from 'react'
 
-function RedeemHistory({ setIsVisible, stateUser }) {
+function RedeemHistory({ setIsVisible }) {
   const { user } = useContext(userContext)
   const [page, setPage] = useState(0)
   const { history, topValue } = useHistory(user.redeemHistory, page)
