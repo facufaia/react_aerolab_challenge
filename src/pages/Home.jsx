@@ -49,14 +49,14 @@ function Home({ setIsVisible }) {
               </div>
             </div>
             <img
-              src='./assets/arrow-left.svg'
+              src='../public/arrow-left.svg'
               onClick={() => {
                 setPage(true)
               }}
               className={page == false ? 'h-[2.4rem] cursor-pointer' : 'hidden'}
             />
             <img
-              src='./assets/arrow-right.svg'
+              src='../public/arrow-right.svg'
               onClick={() => {
                 setPage(false)
               }}

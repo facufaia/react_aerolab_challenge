@@ -5,7 +5,6 @@ import { useContext } from 'react'
 function BuyUnavailable({ product, setIsVisible }) {
   const { _id, category, name, cost, img } = product
   const stateUser = useContext(userContext)
-  const { user } = stateUser
 
   return (
     <li
@@ -16,16 +15,16 @@ function BuyUnavailable({ product, setIsVisible }) {
     >
       <div className='shadow-[3px_4px_8px_-2px_rgba(0,0,0,.14)] hover:shadow-[17px_13px_30px_-7px_rgba(0,0,0,0.6)] hover:-translate-y-2 hover:transition-all hover:duration-700 duration-700'>
         <div>
-          <div className='absolute right-[.5rem] top-[.5rem] flex gap-1 items-center text-[#f2f2f2] bg-[#696969cb] rounded-2xl px-3 py-1 text-xs font-light group-hover:hidden'>
-            <span>You need {cost - user.points}</span>
-            <img src='./assets/coin.svg' className='h-[1.3rem]' />
+          <div className='absolute right-[.5rem] top-[.5rem] flex gap-1 items-center text-[#f2f2f2] bg-[#696969cb] rounded-2xl px-3 py-[0.4rem] font-light group-hover:hidden'>
+            <span className='leading-noner text-[0.85rem]'>You need {cost}</span>
+            <img src='../../public/coin.svg' className='h-[1.1rem] mt-[0.16rem]'/>
           </div>
           <div className='absolute top-0 h-full flex flex-col items-center justify-center gap-4 w-full group-hover:transition-opacity group-hover:opacity-100 group-hover:duration-500 duration-500 opacity-0 bg-[#121212dd]'>
             <div className='flex justify-center gap-2'>
-              <span className='text-2xl text-white leading-none'>
-                You need {cost}
+              <span className='text-white leading-none text-3xl'>
+                {cost}
               </span>
-              <img src='./assets/coin.svg' className='h-7' />
+              <img src='../../public/coin.svg' className='h-7 mt-1' />
             </div>
             <button className='rounded-2xl bg-white text-[#a5a5a5] py-[3px] px-3 '>
               Purchase coins now

@@ -16,29 +16,29 @@ function App() {
   return (
     <>
       <header className='w-full pt-16'>
-        <div className='flex fixed z-50 bg-white justify-end w-full -mt-16 py-[.89rem] px-[2.1rem] text-lg'>
+        <div className='flex fixed z-50 bg-white w-full items-center -mt-16  py-[.89rem] px-[2.1rem] text-lg'>
           <img
-            src='./assets/logo.svg'
+            src='../public/logo.svg'
             className={`h-7 ${!isVisible && 'cursor-pointer'}`}
             onClick={() => {
               setIsVisible(true)
             }}
           />
           <div className='basis-[99%] flex justify-end items-center gap-3 text-[#838383]'>
-            <span className='text-xl'>{user && user.name}</span>
+            <span className='text-[1.4rem] h-full'>{user && user.name}</span>
             <div
               onClick={() => {
                 setIsVisible(!isVisible)
               }}
               className='rounded-3xl gap-1 flex px-2.5 py-1 items-center bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
             >
-              <span className='text-base'>{user.points}</span>
-              <img src='./assets/coin.svg' className='h-7' />
+              <span className='text-[1.05rem] leading-none'>{user.points}</span>
+              <img src='../public/coin.svg' className='h-[1.3rem] mt-1' />
             </div>
           </div>
         </div>
         <div className='relative'>
-          <img src='./assets/header.png' className='h-96 w-full object-cover' />
+          <img src='../public/header.png' className='h-96 w-full object-cover' />
           <span className='absolute bottom-[3.2rem] left-[6.5rem] text-white text-5xl font-bold'>
             Electronics
           </span>

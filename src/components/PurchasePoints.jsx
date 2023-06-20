@@ -12,28 +12,28 @@ function PurchasePoints() {
           onClick={() => {
             handlePurhasePoints(stateUser, 1000)
           }}
-          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 w-full items-center bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
+          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 w-full items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           1000
-          <img src='./assets/coin.svg' className='h-7' />
+          <img src='../../public/coin.svg' className='h-[1.6rem] mt-1'/>
         </button>
         <button
           onClick={() => {
             handlePurhasePoints(stateUser, 5000)
           }}
-          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center end bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
+          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           5000
-          <img src='./assets/coin.svg' className='h-7' />
+          <img src='../../public/coin.svg' className='h-[1.6rem] mt-1'/>
         </button>
         <button
           onClick={() => {
             handlePurhasePoints(stateUser, 7500)
           }}
-          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
+          className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           7500
-          <img src='./assets/coin.svg' className='h-7' />
+          <img src='../../public/coin.svg' className='h-[1.6rem] mt-1'/>
         </button>
       </div>
     </div>
