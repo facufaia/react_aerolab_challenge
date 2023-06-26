@@ -15,14 +15,14 @@ function RedeemHistory({ setIsVisible }) {
         <div className='flex justify-between'>
           <h1 className='text-3xl font-semibold mb-4'>Redeem History</h1>
           <img
-            src='../../public/arrow-left.svg'
+            src='/arrow-left.svg'
             onClick={() => {
               setPage(page - 1)
             }}
             className={page > 0 ? 'h-[2.4rem] cursor-pointer' : 'hidden'}
           />
           <img
-            src='../public/arrow-right.svg'
+            src='/arrow-right.svg'
             onClick={() => {
               page < topValue && setPage(page + 1)
             }}

@@ -13,7 +13,7 @@ function History({ history }) {
                 <span>{createDate.slice(0, 10)}</span>
                 <div>
                   <span>{cost}</span>
-                  <img src='../../public/coin.svg' className='inline w-5' />
+                  <img src='/coin.svg' className='inline w-5' />
                 </div>
               </div>
             </div>

@@ -17,14 +17,14 @@ function BuyUnavailable({ product, setIsVisible }) {
         <div>
           <div className='absolute right-[.5rem] top-[.5rem] flex gap-1 items-center text-[#f2f2f2] bg-[#696969cb] rounded-2xl px-3 py-[0.4rem] font-light group-hover:hidden'>
             <span className='leading-noner text-[0.85rem]'>You need {cost}</span>
-            <img src='../../public/coin.svg' className='h-[1.1rem] mt-[0.16rem]'/>
+            <img src='/coin.svg' className='h-[1.1rem] mt-[0.16rem]'/>
           </div>
           <div className='absolute top-0 h-full flex flex-col items-center justify-center gap-4 w-full group-hover:transition-opacity group-hover:opacity-100 group-hover:duration-500 duration-500 opacity-0 bg-[#121212dd]'>
             <div className='flex justify-center gap-2'>
               <span className='text-white leading-none text-3xl'>
                 {cost}
               </span>
-              <img src='../../public/coin.svg' className='h-7 mt-1' />
+              <img src='/coin.svg' className='h-7 mt-1' />
             </div>
             <button className='rounded-2xl bg-white text-[#a5a5a5] py-[3px] px-3 '>
               Purchase coins now
