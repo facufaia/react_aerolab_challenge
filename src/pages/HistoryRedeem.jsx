@@ -3,6 +3,8 @@ import PurchasePoints from '../components/PurchasePoints'
 import useHistory from '../Hooks/useHistory'
 import userContext from '../context/UserContext'
 import { useState, useContext } from 'react'
+import arrowLeft from '/arrow-left.svg'
+import arrowRight from '/arrow-right.svg'
 
 function RedeemHistory({ setIsVisible }) {
   const { user } = useContext(userContext)
@@ -15,14 +17,14 @@ function RedeemHistory({ setIsVisible }) {
         <div className='flex justify-between'>
           <h1 className='text-3xl font-semibold mb-4'>Redeem History</h1>
           <img
-            src='/arrow-left.svg'
+            src={arrowLeft}
             onClick={() => {
               setPage(page - 1)
             }}
             className={page > 0 ? 'h-[2.4rem] cursor-pointer' : 'hidden'}
           />
           <img
-            src='/arrow-right.svg'
+            src={arrowRight}
             onClick={() => {
               page < topValue && setPage(page + 1)
             }}

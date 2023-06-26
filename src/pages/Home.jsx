@@ -2,6 +2,8 @@ import Loader from '../components/Loader'
 import ProductsList from '../components/ProductsList'
 import useProducts from '../Hooks/useProducts'
 import { useState } from 'react'
+import arrowLeft from '/arrow-left.svg'
+import arrowRight from '/arrow-right.svg'
 
 const sortOptions = [
   { label: 'Most recent', value: 'Most_recent' },
@@ -49,14 +51,14 @@ function Home({ setIsVisible }) {
               </div>
             </div>
             <img
-              src='/arrow-left.svg'
+              src={arrowLeft}
               onClick={() => {
                 setPage(true)
               }}
               className={page == false ? 'h-[2.4rem] cursor-pointer' : 'hidden'}
             />
             <img
-              src='/arrow-right.svg'
+              src={arrowRight}
               onClick={() => {
                 setPage(false)
               }}

@@ -1,6 +1,7 @@
 import { handlePurhasePoints } from '../services/handle_api'
 import { useContext } from 'react'
 import userContext from '../context/UserContext'
+import coin from '/coin.svg'
 
 function PurchasePoints() {
   const stateUser = useContext(userContext)
@@ -15,7 +16,7 @@ function PurchasePoints() {
           className='text-2xl rounded-3xl gap-1 flex px-5 py-1 w-full items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           1000
-          <img src='/coin.svg' className='h-[1.6rem] mt-1'/>
+          <img src={coin} className='h-[1.6rem] mt-1'/>
         </button>
         <button
           onClick={() => {
@@ -24,7 +25,7 @@ function PurchasePoints() {
           className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           5000
-          <img src='/coin.svg' className='h-[1.6rem] mt-1'/>
+          <img src={coin} className='h-[1.6rem] mt-1'/>
         </button>
         <button
           onClick={() => {
@@ -33,7 +34,7 @@ function PurchasePoints() {
           className='text-2xl rounded-3xl gap-1 flex px-5 py-1 items-center text-[#4f4f4f] bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
         >
           7500
-          <img src='/coin.svg' className='h-[1.6rem] mt-1'/>
+          <img src={coin} className='h-[1.6rem] mt-1'/>
         </button>
       </div>
     </div>

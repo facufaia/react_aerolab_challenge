@@ -4,6 +4,9 @@ import Home from './pages/Home'
 import userContext from './context/UserContext'
 import { handleUserSession } from './services/handle_api'
 import './index.css'
+import header from '/header.png'
+import coin from '/coin.svg'
+import logo from '/logo.svg'
 
 function App() {
   const { user, setUser} = useContext(userContext)
@@ -18,7 +21,7 @@ function App() {
       <header className='w-full pt-16'>
         <div className='flex fixed z-50 bg-white w-full items-center -mt-16  py-[.89rem] px-[2.1rem] text-lg'>
           <img
-            src='/logo.svg'
+            src={logo}
             className={`h-7 ${!isVisible && 'cursor-pointer'}`}
             onClick={() => {
               setIsVisible(true)
@@ -33,12 +36,12 @@ function App() {
               className='rounded-3xl gap-1 flex px-2.5 py-1 items-center bg-[#ededed] cursor-pointer hover:bg-[#e8e8e8]'
             >
               <span className='text-[1.05rem] leading-none'>{user.points}</span>
-              <img src='/coin.svg' className='h-[1.3rem] mt-1' />
+              <img src={coin} className='h-[1.3rem] mt-1' />
             </div>
           </div>
         </div>
         <div className='relative'>
-          <img src='/header.png' className='h-96 w-full object-cover' />
+          <img src={header} className='h-96 w-full object-cover' />
           <span className='absolute bottom-[3.2rem] left-[6.5rem] text-white text-5xl font-bold'>
             Electronics
           </span>
