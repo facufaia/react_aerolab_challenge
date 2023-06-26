@@ -1,3 +1,5 @@
+import coin from '/coin.svg'
+
 function History({ history }) {
 
   return (
@@ -13,7 +15,7 @@ function History({ history }) {
                 <span>{createDate.slice(0, 10)}</span>
                 <div>
                   <span>{cost}</span>
-                  <img src='/coin.svg' className='inline w-5' />
+                  <img src={coin} className='inline w-5' />
                 </div>
               </div>
             </div>
